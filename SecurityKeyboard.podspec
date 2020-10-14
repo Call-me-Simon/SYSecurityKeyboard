@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SecurityKeyboard'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SecurityKeyboard.'
+  s.version          = '1.0.0'
+  s.summary          = '自定义安全键盘'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  自定义安全键盘，常用三种键盘1、数字键盘 2、身份证键盘 3、英文字母键盘。
+
+类型说明： 枚举值：GJKeyboardType
+
+typedef NS_ENUM(NSUInteger, GJKeyboardType) {
+
+GJKeyboardTypeNumKeyPad = 1,    //数字键盘
+GJKeyboardTypeCharKeyPad,       //英文键盘
+GJKeyboardTypeCardKeyPad        //身份证键盘
+};
                        DESC
 
   s.homepage         = 'https://github.com/Call-me-Simon/SecurityKeyboard'
